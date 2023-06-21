@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:mynetwork_app/start.dart';
 import 'my_contacts.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyContacts(),
-    );
+      home: StartSocialMedia(
+        url: Uri.parse('https://www.youtube.com/',
+      ),
+      ),
+      );
+    
     
   }
 }
